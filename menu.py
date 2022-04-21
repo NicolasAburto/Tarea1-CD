@@ -1,3 +1,18 @@
+########################################### Descripción del proyecto: ###########################################
+#   Programa en Python que simula una carrera de caballos.
+#   Descipción:
+#    - Se creara 
+#
+#   Autores:
+#       - José Avilán (https://github.com/JoseAvilan)
+#       - Nicolas Aburto (https://github.com/NicolasAburto)
+#       - Franco Avilés (https://github.com/FrancoAv1)
+#
+#   Licencia:
+#       - Abril 2022. Apache 2.0.
+#
+#################################################################################################################
+
 from secrets import choice
 import tkinter as tk
 from tkinter import ttk
@@ -5,6 +20,18 @@ from tkinter.messagebox import showinfo
 from tkinter import *
 from tkinter import ttk
 
+#label boton
+def click():
+    global pop
+    pop = Toplevel(root) 
+    pop.title("Final de la carrera")
+    pop.geometry("350x200")
+
+    pop_label = Label(pop, text="El caballo ganador es tu mamá")
+    pop_label.pack(pady=10)
+
+    my_frame = Frame(pop)
+    my_frame.pack(pady=5)
 
 root = tk.Tk()
 
@@ -38,20 +65,6 @@ label.pack(fill=tk.X, padx=5, pady=5)
 apuesta=tk.StringVar()
 apuesta=tk.Entry(root,textvariable=apuesta)
 apuesta.pack(fill=tk.X, padx=5, pady=5)
-
-#label boton
-
-def click():
-    global pop
-    pop = Toplevel(root) 
-    pop.title("Final de la carrera")
-    pop.geometry("350x200")
-
-    pop_label = Label(pop, text="El caballo ganador es tu mamá")
-    pop_label.pack(pady=10)
-
-    my_frame = Frame(pop)
-    my_frame.pack(pady=5)
 
 button = tk.Button(root, text='Apostar', width=5, command=click)
 button.pack(fill=tk.X, padx=5, pady=5)
