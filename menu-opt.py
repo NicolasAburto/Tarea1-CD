@@ -1,7 +1,9 @@
 ########################################### Descripción del proyecto: ###########################################
 #   Programa en Python que simula una carrera de caballos.
 #   Descipción:
-#    - Se creara 
+#    - Se creará un programa que simule una carrera de caballos con avance aleatorio.
+#    - Código desarrollado mediante metodología de programación modular, con el objetivo de reutilizar bibliotecas de funciones y/o métodos.
+#    -
 #
 #   Autores:
 #       - José Avilán (https://github.com/JoseAvilan)
