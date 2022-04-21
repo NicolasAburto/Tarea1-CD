@@ -5,7 +5,7 @@ from tkinter.messagebox import showinfo
 
 root = tk.Tk()
 
-bit = root.iconbitmap('cab-vec.ico')
+
 # config ventana raiz
 root.geometry('800x800')
 root.resizable(False, False)
