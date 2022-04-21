@@ -9,5 +9,4 @@ Descomprimir la aplicación y ejecutar "menu-opt.py"
 ## Importante
 Al momento de ejecutar la aplicación se debe ingresar en la interfaz el número del caballo apostante.
 
-## Ejemplos de ejecución
 
