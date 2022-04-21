@@ -164,14 +164,29 @@ my_label.pack(pady=20)
 #######################################################################################################################################################################
 
 ###############################################     BARRA DE PROGRESO    ##############################################################################################
+
+label = ttk.Label(text="Caballo 1 ")
+label.pack(fill=tk.X, padx=100, pady=5)
+
 my_progress = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
 my_progress.pack(pady=20)
+
+label = ttk.Label(text="Caballo 2 ")
+label.pack(fill=tk.X, padx=100, pady=5)
 
 my_progress2 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
 my_progress2.pack(pady=20)
 
+
+label = ttk.Label(text="Caballo 3 ")
+label.pack(fill=tk.X, padx=100, pady=5)
+
 my_progress3 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
 my_progress3.pack(pady=20)
+
+
+label = ttk.Label(text="Caballo 4 ")
+label.pack(fill=tk.X, padx=100, pady=5)
 
 my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
 my_progress4.pack(pady=20)
