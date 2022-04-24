@@ -33,16 +33,25 @@ from threading import Thread
 from urllib.request import urlretrieve, urlcleanup
 import time
 
-def __init__( self, nombre = None, maxPasosPorTurno = 10):
-    """
-    Constructor.
-    @param nombre Nombre del caballo.
-    @param maxPasosPorTurno Máximo de pasos que puede alcanzar en un turno.
-    """
-    self.nombre = nombre
-    self.maxPasosPorTurno = 10
-    self.__carreras = []
-    self.__pasosCarreraActual = 0
+class Caballo:
+    def __init__( self, nombre = None, maxPasosPorTurno = 10):
+        """
+        Constructor.
+        @param nombre Nombre del caballo.
+        @param maxPasosPorTurno Máximo de pasos que puede alcanzar en un turno.
+        """
+        self.nombre = nombre
+        self.maxPasosPorTurno = 10
+        self.__carreras = []
+        self.__pasosCarreraActual = 0
+        
+    def MAX_PASOS_POR_TURNO():
+        """
+        Obtenertener el valor por defecto del número máximo de pasos por turno 
+        que puede dar un caballo.
+        @return Valor por defecto de número máximo de pasos por turno.
+        """
+        return Caballo.__MAX_PASOS_POR_TURNO
 
 def stop():
     #REINICIA LAS BARRAS DE PROGRESO PARA COMENZAR OTRA CARRERA
@@ -77,6 +86,7 @@ def carrera():
             my_progress4['value'] += caballo4
             root.update_idletasks()
             time.sleep(0.5)
+
         
         print("Caballo 1: " + str(caballo1))
         print("Caballo 2: " + str(caballo2)) 
@@ -205,20 +215,20 @@ my_progress4.pack(pady=20)
 label = ttk.Label(text="Caballo 5 ")
 label.pack(fill=tk.X, padx=100, pady=5)
 
-my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
-my_progress4.pack(pady=20)
+my_progress5 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
+my_progress5.pack(pady=20)
 
 label = ttk.Label(text="Caballo 6 ")
 label.pack(fill=tk.X, padx=100, pady=5)
 
-my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
-my_progress4.pack(pady=20)
+my_progress6 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
+my_progress6.pack(pady=20)
 
 label = ttk.Label(text="Caballo 7 ")
 label.pack(fill=tk.X, padx=100, pady=5)
 
-my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
-my_progress4.pack(pady=20)
+my_progress7 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
+my_progress7.pack(pady=20)
 
 my_button = Button(root, text="Reiniciar", command=stop)
 my_button.pack(pady=20)
