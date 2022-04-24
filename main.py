@@ -127,7 +127,7 @@ OptionList = [
 root = tk.Tk()
 
 bit = root.iconbitmap('cab-vec.ico')
-root.geometry('800x800')
+root.geometry('800x1000')
 root.resizable(False, False)
 root.title('Hipódromo')
 
@@ -186,6 +186,24 @@ my_progress3.pack(pady=20)
 
 
 label = ttk.Label(text="Caballo 4 ")
+label.pack(fill=tk.X, padx=100, pady=5)
+
+my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
+my_progress4.pack(pady=20)
+
+label = ttk.Label(text="Caballo 5 ")
+label.pack(fill=tk.X, padx=100, pady=5)
+
+my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
+my_progress4.pack(pady=20)
+
+label = ttk.Label(text="Caballo 6 ")
+label.pack(fill=tk.X, padx=100, pady=5)
+
+my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
+my_progress4.pack(pady=20)
+
+label = ttk.Label(text="Caballo 7 ")
 label.pack(fill=tk.X, padx=100, pady=5)
 
 my_progress4 = ttk.Progressbar(root, orient=HORIZONTAL, length=600, mode='determinate')
