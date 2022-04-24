@@ -33,6 +33,17 @@ from threading import Thread
 from urllib.request import urlretrieve, urlcleanup
 import time
 
+def __init__( self, nombre = None, maxPasosPorTurno = 10):
+    """
+    Constructor.
+    @param nombre Nombre del caballo.
+    @param maxPasosPorTurno Máximo de pasos que puede alcanzar en un turno.
+    """
+    self.nombre = nombre
+    self.maxPasosPorTurno = 10
+    self.__carreras = []
+    self.__pasosCarreraActual = 0
+
 def stop():
     #REINICIA LAS BARRAS DE PROGRESO PARA COMENZAR OTRA CARRERA
     my_progress.stop()
