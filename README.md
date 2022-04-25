@@ -7,4 +7,4 @@ Programa desarrollado en Python, junto al uso de módulos e interfaz gráfica.
 Descomprimir la aplicación y ejecutar "main.py"
 
 ## Importante
-Al momento de ejecutar la aplicación se debe ingresar en la interfaz el número del caballo apostante.
+Al momento de ejecutar la aplicación se debe ingresar en la cantidad de caballos a participar con sus nombres.

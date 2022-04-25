@@ -5,6 +5,9 @@
 #    - Código desarrollado mediante metodología de programación modular, con el objetivo de reutilizar bibliotecas de funciones y/o métodos.
 #    - Versión: 0.1 (Prueba y demostración)
 #
+#   Github:
+#       https://github.com/NicolasAburto/Tarea1-SO          
+#
 #   Autores:
 #       - José Avilán (https://github.com/JoseAvilan)
 #       - Nicolas Aburto (https://github.com/NicolasAburto)
