@@ -226,4 +226,4 @@ while not esFinalDeCarrera:
     
 carrera.Puestos()
 carrera.TablaDeResultados()
-print( "\nCaballo Ganador: \n" + str( [caballo.nombre for caballo in carrera.CaballoGanador]))
+print( "\nCaballo Ganador: " + str( [caballo.nombre for caballo in carrera.CaballoGanador]) + "\n")
